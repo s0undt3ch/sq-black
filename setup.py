@@ -3,6 +3,7 @@ import ast
 import re
 from setuptools import setup
 import sys
+import versioneer
 
 assert sys.version_info >= (3, 6, 0), 'saltstack-black requires Python 3.6+'
 from pathlib import Path  # noqa E402
@@ -19,6 +20,8 @@ def get_long_description() -> str:
 setup(
     name='saltstack-black',
     version=get_version(),
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     description='The SaltStack uncompromising code formatter.',
     long_description=get_long_description(),
     long_description_content_type='text/markdown',
@@ -27,7 +30,7 @@ setup(
     author_email='pedro@algarvio.me',
     url='https://github.com/saltstack/saltstack-black',
     license='Apache Software License 2.0',
-    py_modules=['sblack'],
+    packages=['sblack'],
     python_requires='>=3.6',
     zip_safe=False,
     install_requires=['black>=18.9b0'],
