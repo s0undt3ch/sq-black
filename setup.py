@@ -47,9 +47,5 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Software Development :: Quality Assurance',
     ],
-    entry_points={
-        'console_scripts': [
-            'sq-black=sqblack.cli:main',
-        ]
-    },
+    entry_points={'console_scripts': ['sq-black=sqblack.cli:main']},
 )
