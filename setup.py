@@ -19,7 +19,6 @@ def get_long_description() -> str:
 
 setup(
     name='saltstack-black',
-    version=get_version(),
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description='The SaltStack uncompromising code formatter.',
@@ -50,7 +49,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'sblack=sblack:main',
+            's-black=sblack.cli:main',
         ]
     },
 )
