@@ -3,8 +3,8 @@
 # Import Python libs
 import re
 
-# Import SBlack libs
-from sblack._version import get_versions
+# Import SQ-Black libs
+from sqblack._version import get_versions
 __version__ = get_versions()['version']
 del get_versions
 

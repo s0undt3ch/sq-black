@@ -1,0 +1,7 @@
+-   id: sq-black
+    name: sq-black
+    description: 'SQ-Black: The uncompromising, single quotes, Python code formatter'
+    entry: sq-black
+    language: python
+    language_version: python3
+    types: [python]

@@ -42,8 +42,8 @@ def get_config():
     cfg.VCS = "git"
     cfg.style = "pep440-branch-based"
     cfg.tag_prefix = "v"
-    cfg.parentdir_prefix = "SaltStack-Black-"
-    cfg.versionfile_source = "sblack/_version.py"
+    cfg.parentdir_prefix = "SQ-Black-"
+    cfg.versionfile_source = "sqblack/_version.py"
     cfg.verbose = False
     return cfg
 

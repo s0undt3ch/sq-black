@@ -18,22 +18,22 @@ def get_long_description() -> str:
 
 
 setup(
-    name='saltstack-black',
+    name='SQ-Black',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
-    description='The SaltStack uncompromising code formatter.',
+    description='The uncompromising, single quotes, code formatter.',
     long_description=get_long_description(),
     long_description_content_type='text/markdown',
     keywords='automation formatter yapf autopep8 pyfmt gofmt rustfmt black',
     author='Pedro Algarvio',
     author_email='pedro@algarvio.me',
-    url='https://github.com/saltstack/saltstack-black',
+    url='https://github.com/s0undt3ch/sq-black',
     license='Apache Software License 2.0',
-    packages=['sblack'],
+    packages=['sqblack'],
     python_requires='>=3.6',
     zip_safe=False,
     install_requires=['black>=18.9b0'],
-    test_suite='tests.test_sblack',
+    test_suite='tests.test_sqblack',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
@@ -49,7 +49,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            's-black=sblack.cli:main',
+            'sq-black=sqblack.cli:main',
         ]
     },
 )
